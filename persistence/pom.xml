@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>multiple-modules-maven-app</artifactId>
+        <groupId>damir</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>persistence</artifactId>
+    <!--za svaki pojedinacni module se stavlja packaging jar!!!-->
+    <packaging>jar</packaging>
+    <!--Persistence ovisi o domain(buissnise logick) i zato ubacujemo ovaj dependency-->
+    <dependencies>
+        <dependency>
+            <groupId>damir</groupId>
+            <artifactId>domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
